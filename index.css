@@ -1,6 +1,8 @@
 body{
     overflow: auto;
     overflow-x: hidden;
+    background-color: black;
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   html{
@@ -78,4 +80,155 @@ body{
 .skill-btn{
     border-radius: 24px;
     cursor: default !important;
+}
+
+/*------------------ Education --------------*/
+/* body{
+    line-height:1.3em;
+    min-width:920px;
+  } */
+  .history-tl-container{
+    font-family: "Roboto",sans-serif;
+  width:50%;
+  margin:auto;
+  display:block;
+  position:relative;
+  color: white;
+}
+.history-tl-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+
+}
+.history-tl-container ul.tl li{
+    list-style: none;
+    margin:auto;
+    margin-left:200px;
+    min-height:50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left:1px dashed #86D6FF;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+.history-tl-container ul.tl li:last-child{ border-left:0;}
+.history-tl-container ul.tl li::before{
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #258CC7;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+
+}
+.history-tl-container ul.tl li:hover::before{
+    border-color:  #258CC7;
+    transition: all 1000ms ease-in-out;
+}
+.item-title {
+  font-size: 20px;
+}
+ul.tl li .item-detail{
+    /* color:rgba(95, 49, 49, 0.5); */
+    font-size:18 px;
+}
+ul.tl li .timestamp{
+    color: #8D8D8D;
+    position: absolute;
+  width:100px;
+    left: -50%;
+    text-align: right;
+    font-size: 15px;
+}
+
+
+  /*------------------ Projects --------------*/
+
+  
+.containerr {
+    position: relative;
+    /* margin: 20px; */
+    /* width: 50rem; */
+    height: 25rem;
+    width: 14rem;
+}
+  
+  .image {
+    display: block;
+    /* width: 100%; */
+    height: 75%;
+  }
+  .boxx{
+    box-shadow: 0 4px 11px 0 #D6D3EA!important;
+      /* box-shadow: 1px 1px 10px 3px rgb(206, 180, 180); */
+      /* height: 20rem;
+      width: 4rem; */
+      padding: 1%;
+      margin-top: 10vh;
+      margin-left: 10vw;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 12px;
+    }
+    
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(24, 23, 23);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 12px;
+    transition: .5s ease;
+  }
+  
+  .containerr:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    /* right: -3%; */
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+  }
+
+.content{
+    text-align: center;
+}
+ 
+  .common{
+      margin: 1rem;
+      padding: 0.5rem;
+      color: rgb(65, 64, 64);
+      background-color: rgb(253, 252, 252);
+      border-radius: 50%;
+  }
+.common:hover{
+    text-decoration: none;
+
+}
+  .fa-instagram:hover{
+      color: rgb(201, 8, 104);
+  }
+  .fa-envelope:hover{
+    color: rgb(255, 0, 64);
+}
+.fa-github:hover{
+    color: rgb(34, 34, 34);
+}
+.fa-twitter:hover{
+    color: rgb(5, 155, 224);
 }
